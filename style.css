@@ -139,7 +139,6 @@ header ul {
     cursor: pointer;
     margin: 5px;
     font-size: 15px;
-
 }
 
 .button span {
@@ -166,9 +165,221 @@ header ul {
 /* -------------------SECTION 2------------------- */
 
 .section2 {
-
-    position: absolute;
+    display: flex;
+    z-index: -1;
+    flex-wrap: wrap;
 }
 
+.section2 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 40px 86px 50px 170px;
+    width: 29%
+}
+
+.section2 p{
+    letter-spacing:0.02em;
+    font:normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+    line-height: 1.7;
+}
+
+.section2 h1{
+    margin-top: -40px;
+}
+
+hr{
+    width: 60px;
+    color: black; 
+    height: 0.1px;
+    border-style: solid;
+    background-color: black;
+}
+
+
+/* -------------------SECTION3------------------- */
+
+.section3{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; 
+    z-index: -1;
+    background-image: url(dots.png);
+    padding-bottom: 100px;
+}
+
+.section3 hr{
+    align-self: flex-start;
+    margin-left: 175px;
+    margin-top: 120px;
+}
+
+.section3 h1{
+    margin-top: 10px;
+    margin-left: 175px;
+    align-self: flex-start;
+}
+
+.box{
+    width: auto;
+    height: auto;
+    background: white; 
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.boxa{
+    width: 480px;
+    height: 380px; 
+}
+
+.boxa img{
+    width: 100%;
+    height: 100%;
+}
+
+.boxb{
+    width: 480px; 
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section3 h3{
+    margin-bottom: 10px;
+}
+
+.buttonb{
+    background-color: #57BBBF;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding: 11px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.button1{
+    background-color: black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 13px 24px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 15px;
+}
+
+.button1:hover {
+    border: 2px solid black;
+    color: black;
+    padding: 11px 22px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+.buttonb:hover{
+    background-color: cadetblue;
+}
+
+ /* ------------------- FOOTER ------------------- */
+
+footer{
+    background-color: #57BBBF;
+    height: 500px;   
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 175px; 
+}
+
+footer hr{
+    margin-top: 100px; 
+}
+
+footer h2{ 
+    margin-top: 20px;
+}
+
+footer p{
+    margin-top: 30px; 
+}
+
+
+.footer1 img{
+    width: 16px;
+    height: 16px;
+    margin-right: 25px;
+    margin-top: 30px;
+}
+.by{
+    margin-top: 85px;
+}
+
+.footer2{
+    margin-right: 175px;
+    width: 50%;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+input{
+    background-color: transparent;
+    border: 2px solid black;
+    width: 450px;
+    height: 30px; 
+    margin: 5px;
+}
+
+textarea{
+    background-color: transparent;
+    border: 2px solid black;
+    margin: 5px;
+    width: 450px;
+    height: 200px;
+}
+
+.submit{
+    background-color: black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 85px;
+    height: 35px;
+}
+
+.submit:hover{
+    border: 2px solid black;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: inherit;
+}
 
 /* -----------------MEDIA QUERY------------------*/
